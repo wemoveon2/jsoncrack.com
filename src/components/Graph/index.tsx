@@ -75,7 +75,7 @@ const layoutOptions = {
   "elk.layered.nodePlacement.strategy": "NETWORK_SIMPLEX",
 };
 
-const PREMIUM_LIMIT = 200;
+const PREMIUM_LIMIT = 200000;
 const ERROR_LIMIT = 3_000;
 
 const GraphCanvas = ({ isWidget }: GraphProps) => {
