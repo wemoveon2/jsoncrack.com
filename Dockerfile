@@ -4,6 +4,8 @@ WORKDIR /src
 
 # Cache dependencies first
 COPY package.json yarn.lock ./
+RUN apk add --no-cache python3 make g++
+RUN npm install -g node-gyp
 RUN yarn install --frozen-lockfile
 
 # Copy other files and build
